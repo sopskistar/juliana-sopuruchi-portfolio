@@ -40,7 +40,7 @@ export default function Page() {
   return (
     <main className="site-shell">
       <header className="nav-wrap">
-        <a className="wordmark" href="#top" aria-label="Juliana Udeorji home"><span>J</span>UDEORJI<span className="dot">.</span></a>
+        <a className="wordmark" href="#top" aria-label="Sopuruchi home"><span>S</span>OPURUCHI<span className="dot">.</span></a>
         <nav className={menuOpen ? 'nav-links nav-open' : 'nav-links'} aria-label="Main navigation">
           <a href="#work" onClick={() => setMenuOpen(false)}>Work</a>
           <a href="#journey" onClick={() => setMenuOpen(false)}>Journey</a>
@@ -53,13 +53,13 @@ export default function Page() {
 
       <section className="hero section-pad" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span className="eyebrow-line" /> Cloud · QA · Web3 · Python</p>
+          <p className="eyebrow"><span className="eyebrow-line" /> Cloud Engineering · Networking · QA · Web3</p>
           <h1>Building, testing &<br /><em>exploring</em> technology.</h1>
           <p className="hero-lede">I&apos;m Juliana — a technical practitioner and digital entrepreneur working across cloud engineering, networking, QA automation, Web3, Python, and domain investing.</p>
           <div className="hero-actions"><a className="button button-primary" href="#work">View selected work <ArrowUpRight /></a><a className="button button-quiet" href="#about">More about me <ChevronRight /></a></div>
           <div className="hero-meta"><span>Based in the work</span><span className="meta-rule" /><span>Learning by building</span></div>
         </div>
-        <div className="hero-image-wrap"><div className="image-label">Portrait / 01</div><img src={portrait} alt="Juliana Sopuruchi Udeorji in a denim jacket" className="hero-image" /><div className="image-caption"><span>Juliana Sopuruchi Udeorji</span><span>Technical practitioner<br />& digital entrepreneur</span></div></div>
+        <div className="hero-image-wrap"><div className="image-label">Portrait / 01</div><img src={portrait} alt="Juliana Sopuruchi Udeorji in a denim jacket" className="hero-image" /></div>
       </section>
 
       <section className="statement section-pad"><p className="section-kicker">01 / The throughline</p><div className="statement-content"><h2>Curiosity is useful.<br /><span>Practice makes it real.</span></h2><p>I build a grounded technical practice through hands-on projects, careful testing, and continuous learning. From AWS architecture and network fundamentals to Web3 systems and automation, I care about understanding how things work — then making them work better.</p></div></section>
