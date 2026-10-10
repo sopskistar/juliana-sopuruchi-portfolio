@@ -40,26 +40,26 @@ export default function Page() {
   return (
     <main className="site-shell">
       <header className="nav-wrap">
-        <a className="wordmark" href="#top" aria-label="Juliana Udeorji home"><span>J</span>UDEORJI<span className="dot">.</span></a>
+        <a className="wordmark" href="#top" aria-label="Sopuruchi home"><span>S</span>OPURUCHI<span className="dot">.</span></a>
         <nav className={menuOpen ? 'nav-links nav-open' : 'nav-links'} aria-label="Main navigation">
           <a href="#work" onClick={() => setMenuOpen(false)}>Work</a>
           <a href="#journey" onClick={() => setMenuOpen(false)}>Journey</a>
           <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
         </nav>
-        <a className="nav-availability" href="mailto:julianahonour20@gmail.com"><span className="status-dot" /> Available for thoughtful work</a>
+        <a className="nav-availability" href="mailto:julianahonour20@gmail.com?subject=Thoughtful%20work%20inquiry" target="_self"><span className="status-dot" /> Available for thoughtful work</a>
         <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation" aria-expanded={menuOpen}>{menuOpen ? <X /> : <Menu />}</button>
       </header>
 
       <section className="hero section-pad" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span className="eyebrow-line" /> Cloud · QA · Web3 · Python</p>
+          <p className="eyebrow"><span className="eyebrow-line" /> Cloud Engineering · Networking · QA · Web3</p>
           <h1>Building, testing &<br /><em>exploring</em> technology.</h1>
           <p className="hero-lede">I&apos;m Juliana — a technical practitioner and digital entrepreneur working across cloud engineering, networking, QA automation, Web3, Python, and domain investing.</p>
           <div className="hero-actions"><a className="button button-primary" href="#work">View selected work <ArrowUpRight /></a><a className="button button-quiet" href="#about">More about me <ChevronRight /></a></div>
           <div className="hero-meta"><span>Based in the work</span><span className="meta-rule" /><span>Learning by building</span></div>
         </div>
-        <div className="hero-image-wrap"><div className="image-label">Portrait / 01</div><img src={portrait} alt="Juliana Sopuruchi Udeorji in a denim jacket" className="hero-image" /><div className="image-caption"><span>Juliana Sopuruchi Udeorji</span><span>Technical practitioner<br />& digital entrepreneur</span></div></div>
+        <div className="hero-image-wrap"><div className="image-label">Portrait / 01</div><img src={portrait} alt="Juliana Sopuruchi Udeorji in a denim jacket" className="hero-image" /></div>
       </section>
 
       <section className="statement section-pad"><p className="section-kicker">01 / The throughline</p><div className="statement-content"><h2>Curiosity is useful.<br /><span>Practice makes it real.</span></h2><p>I build a grounded technical practice through hands-on projects, careful testing, and continuous learning. From AWS architecture and network fundamentals to Web3 systems and automation, I care about understanding how things work — then making them work better.</p></div></section>
@@ -70,7 +70,7 @@ export default function Page() {
 
       <section className="about section-pad" id="about"><div className="section-heading"><div><p className="section-kicker">04 / The toolkit</p><h2>Always<br /><em>learning.</em></h2></div><p className="section-note">No arbitrary percentages. Just the tools and concepts I&apos;m actively putting into practice.</p></div><div className="skills-grid">{skills.map(({icon: Icon, title, items}) => <div className="skill-card" key={title}><Icon /><h3>{title}</h3><p>{items}</p></div>)}</div><div className="certification"><div className="cert-mark"><Check /></div><div><p className="section-kicker">Current credential</p><h3>AWS Certified Cloud Practitioner</h3><p>Active certification · Credential details available upon request</p></div><span className="cert-status">ACTIVE</span></div></section>
 
-      <section className="contact section-pad" id="contact"><div className="contact-inner"><p className="section-kicker">05 / Let&apos;s connect</p><h2>Have a thoughtful<br /><em>idea?</em> Say hello.</h2><a className="email-link" href="mailto:julianahonour20@gmail.com">julianahonour20@gmail.com <ArrowUpRight /></a><div className="contact-lower"><p>Open to conversations around cloud, QA, Web3, automation, and interesting problems worth solving.</p><div className="social-links"><a href="https://github.com/sopskistar" target="_blank" rel="noreferrer"><Code2 /> GitHub</a><a href="https://www.linkedin.com/in/udeorji-juliana-1b66a6166/" target="_blank" rel="noreferrer"><Network /> LinkedIn</a><a href="https://x.com/sopskistar" target="_blank" rel="noreferrer"><X /> X / Twitter</a></div></div><form className="contact-form" onSubmit={(event) => { event.preventDefault(); setSent(true) }}><input required aria-label="Your email" type="email" placeholder="Your email address" /><button type="submit">{sent ? 'Message noted' : 'Start a conversation'} <Send /></button></form>{sent && <p className="form-success">Thanks — your note is ready. Please email me directly to continue the conversation.</p>}</div></section>
+      <section className="contact section-pad" id="contact"><div className="contact-inner"><p className="section-kicker">05 / Let&apos;s connect</p><h2>Have a thoughtful<br /><em>idea?</em> Say hello.</h2><a className="email-link" href="mailto:julianahonour20@gmail.com?subject=Thoughtful%20work%20inquiry" target="_self">julianahonour20@gmail.com <ArrowUpRight /></a><div className="contact-lower"><p>Open to conversations around cloud, QA, Web3, automation, and interesting problems worth solving.</p><div className="social-links"><a href="https://github.com/sopskistar" target="_blank" rel="noreferrer"><Code2 /> GitHub</a><a href="https://www.linkedin.com/in/udeorji-juliana-1b66a6166/" target="_blank" rel="noreferrer"><Network /> LinkedIn</a><a href="https://x.com/sopskistar" target="_blank" rel="noreferrer"><X /> X / Twitter</a></div></div><form className="contact-form" onSubmit={(event) => { event.preventDefault(); setSent(true) }}><input required aria-label="Your email" type="email" placeholder="Your email address" /><button type="submit">{sent ? 'Message noted' : 'Start a conversation'} <Send /></button></form>{sent && <p className="form-success">Thanks — your note is ready. Please email me directly to continue the conversation.</p>}</div></section>
 
       <footer className="footer section-pad"><span>© 2026 Juliana Sopuruchi Udeorji</span><span>Designed with intention · Built with practice</span><a href="#top">Back to top ↑</a></footer>
     </main>
